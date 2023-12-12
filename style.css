@@ -1,13 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", "Gloria Hallelujah", cursive, sans-serif;
+  height: 100vh;
+}
+
 main {
+  background-image: url(thumbnail.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 4px 0px rgba(63, 63, 63, 0.041),
+    0px 0px 80.6px 15px #000 inset;
+  backdrop-filter: blur(1.6px);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
+}
+
+button {
+  color: white;
+  background-color: #2f2f2f;
+  border: 0px solid #000000;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-top: 10em;
+}
+
+main h1 {
+  font-size: 4em;
+}
+
+.title {
+  text-align: center;
+}
+
+.credit-button {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin: 0.5em;
 }
