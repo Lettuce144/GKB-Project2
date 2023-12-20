@@ -1,0 +1,17 @@
+{
+  "scene": {
+    "1": {
+      "Order": ["lucas", "moneymaster"],
+      "lucas": {
+        "dialog": "Hello, I'm Lucas.",
+        "dialog-2": "I'm a student at the University of Michigan.",
+        "texture": "lucas.png"
+      },
+      "moneymaster": {
+        "dialog": "Hello Lucas!, I'm the Money Master.",
+        "dialog-2": "I'm here to help you learn about money.",
+        "texture": "moneymaster.png"
+      }
+    }
+  }
+}

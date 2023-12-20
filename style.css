@@ -37,6 +37,29 @@ button {
   cursor: pointer;
 }
 
+/* TODO: fix strech */
+/* button {
+  border: 0px solid #000000;
+  background: url("buttons/button_def.png") no-repeat center scroll;
+  background-size: cover;
+
+  padding: 0.5em 2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background: url("buttons/button_hov.png") no-repeat center scroll;
+  background-size: cover;
+}
+
+button:active {
+  background: url("buttons/button_pres.png") no-repeat center scroll;
+  background-size: cover;
+}
+*/
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -48,7 +71,7 @@ main h1 {
   font-size: 4em;
 }
 
-.title {
+#title {
   text-align: center;
 }
 
