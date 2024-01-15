@@ -1,16 +1,29 @@
 {
+  "global-choices": {
+  },
+
   "scene": {
-    "1": {
-      "Order": ["lucas", "moneymaster"],
+    "1": {  
       "lucas": {
-        "dialog": "Hello, I'm Lucas.",
-        "dialog-2": "I'm a student at the University of Michigan.",
+        "dialog": [
+          "Hello, I'm Lucas.",
+          "I'm a student at the University of Michigan."
+        ],
         "texture": "lucas.png"
       },
       "moneymaster": {
-        "dialog": "Hello Lucas!, I'm the Money Master.",
-        "dialog-2": "I'm here to help you learn about money.",
+        "dialog": [
+          "Hello Lucas!, I'm the Money Master.", 
+          "I'm here to help you learn about money."
+        ],
         "texture": "moneymaster.png"
+      }
+    },
+    "2": {
+      "lucas": {
+        "dialog": "Who are you?",
+        "dialog-2": "I don't like",
+        "texture": "lucas.png"
       }
     }
   }

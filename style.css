@@ -71,7 +71,7 @@ main h1 {
   font-size: 4em;
 }
 
-#title {
+.title {
   text-align: center;
 }
 
@@ -126,5 +126,15 @@ main h1 {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .dialouge-container {
+    left: unset;
+    width: 95%;
+    transition: 1s ease;
   }
 }
