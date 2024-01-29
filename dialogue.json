@@ -1,30 +1,143 @@
 {
   "global-choices": {
   },
-
   "scene": {
-    "1": {  
-      "lucas": {
-        "dialog": [
-          "Hello, I'm Lucas.",
-          "I'm a student at the University of Michigan."
-        ],
-        "texture": "lucas.png"
-      },
-      "moneymaster": {
-        "dialog": [
-          "Hello Lucas!, I'm the Money Master.", 
-          "I'm here to help you learn about money."
-        ],
-        "texture": "moneymaster.png"
-      }
+    "1": {
+      "people" : [
+        {
+          "character": "lucas",
+          "lines": [
+            "Een avond in de bar kan vast geen kwaad.",
+            "*Loopt naar de bar mompelend*",
+            "*Ziet een prachtige vrouw aan de andere kant van de bar.* Hey, kan ik hier naast je zitten?"
+          ]
+        },
+        {
+          "character": "lena",
+          "lines" : [
+            "Natuurlijk, maak het jezelf gemakkelijk"
+          ]
+        }
+      ]
     },
     "2": {
-      "lucas": {
-        "dialog": "Who are you?",
-        "dialog-2": "I don't like",
-        "texture": "lucas.png"
-      }
+      "people": [
+        {
+          "character": "lucas",
+          "lines": [
+            "Vertel me meer over jezelf, Lena. Wat drijft jou?"
+          ]
+        },
+        {
+          "character": "lena",
+          "lines": [
+            "Oh, ik ben dol op avontuur en nieuwe ervaringen. Het leven is te kort om stil te zitten, vind je niet?"
+          ]
+        },
+        {
+          "character": "lucas",
+          "lines": [
+            "Ik ben het volkomen met je eens. En trouwens, je hebt een ongelofelijke glimlach"
+          ]
+        }
+      ]
+    },
+    "3" : {
+      "people" : [
+        {
+          "character" : "lena",
+          "lines" : [
+            "*Belt met paniek* Lucas, ik zit in de problemen. Ik heb wat financiële hulp nodig, anders kom ik echt in de problemen."
+            ]
+        },
+        {
+          "character" : "lucas",
+          "lines" : [
+            "Maak je geen zorgen, Lena. Ik zal je helpen, wat er ook gebeurt. Je kunt op me rekenen."
+            ]
+        }
+      ]
+    },
+    "4": {
+      "people": [
+        {
+          "character": "bankfunctionaris",
+          "lines": [
+            "Hoe kunnen we u helpen vandaag, meneer?"
+          ]
+        },
+        {
+          "character": "lucas",
+          "lines": [
+            "Ik heb een lening nodig. Niet veel, gewoon genoeg om een vriendin uit de brand te helpen."
+          ]
+        }
+      ]
+    },
+    "5": {
+      "people": [
+        {
+          "character": "bankfunctionaris",
+          "lines": [
+            "Uw lening is goedgekeurd, meneer. Het geld zal binnenkort op uw rekening staan."
+          ]
+        },
+        {
+          "character": "lucas",
+          "lines": [
+            "Dank je. Dit zal Lena echt uit de brand helpen."
+          ]
+        }
+      ]
+    },
+    "6": {
+      "people": [
+        {
+          "character": "lucas",
+          "lines": [
+            "Moet ik dit echt doen? Is dit wel de juiste keuze?"
+          ]
+        },
+        {
+          "character": "lucas-brein",
+          "lines": [
+            "Je doet dit uit liefde, Lucas. Wat kan er misgaan?",
+            "Zal ik dit wel doen of niet?"
+          ]
+        }
+      ]
+    },
+    "7": {
+      "people": [
+        {
+          "character": "dorpsgenoot",
+          "lines": [
+            "Lucas, je hebt ons gered! We zijn je zo dankbaar."
+          ]
+        },
+        {
+          "character": "lucas",
+          "lines": [
+            "Het was het allemaal waard. Samen staan we sterk."
+          ]
+        }
+      ]
+    },
+    "8": {
+      "people": [
+        {
+          "character": "dorpsgenoot",
+          "lines": [
+            "Hoe kon je dit laten gebeuren, Lucas? Alles is verloren."
+          ]
+        },
+        {
+          "character": "lucas",
+          "lines": [
+            "Ik dacht dat ik het juiste deed. Het spijt me, het spijt me zo."
+          ]
+        }
+      ]
     }
   }
 }

@@ -27,18 +27,24 @@
 
     <main class="scene-class" id="scene-container">
         <button style="position: absolute; top: 0; right: 0; margin: 2em;" id="mute">M</button>
-        <div class="dialouge-container">
+        <div id="dialouge-container">
 
             <img class="character" id="character" src="scenes/Lucas.png" alt="Lucas" srcset="">
             <!-- </div> -->
             <div class="dialouge-box">
 
-                <h2 id="person-title">Person:</h2>
+                <div class="title-dialogue-container">
+                    <h2 id="person-title">Person:</h2>
 
-                <div id="dialouge">
+                    <div id="dialouge">
+                    </div>
+                </div>
+                <div id="choice-container" style="display: none;">
+                    <button onclick="SetScene(8)">Ja</button>
+                    <button onclick="SetScene(7)">Nee</button>
                 </div>
             </div>
-            
+
         </div>
     </main>
 
