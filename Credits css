@@ -1,0 +1,56 @@
+body {
+  background-image: url('thumbnail.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  .credit-image {
+    max-width: 120px; 
+    max-height: 120px; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
+
+
+.credit-image.second {
+  max-width: 150px; 
+  max-height: 150px;
+  margin-top: 40px; 
+}
+
+
+
+
+
+
+.credits-text {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  animation: slideInUp 38s forwards, fadeIn 3s forwards;
+}
+
+
+@keyframes slideInUp {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, -400%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 10;
+  }
+}
