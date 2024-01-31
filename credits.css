@@ -1,29 +1,31 @@
 body {
   background-image: url('thumbnail.jpg');
   background-size: cover;
-  background-position: center;
+  box-shadow: 0px 4px 4px 0px rgba(63, 63, 63, 0.041),
+    0px 0px 80.6px 1px #000 inset;
+  backdrop-filter: blur(1.6px);
   background-repeat: no-repeat;
 }
-  .credit-image {
-    max-width: 120px; 
-    max-height: 120px; 
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
+
+.credit-images-container{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+}
+
+.credit-image {
+  max-width: 120px; 
+  max-height: 120px; 
+}
   
 
 
 .credit-image.second {
   max-width: 150px; 
   max-height: 150px;
-  margin-top: 40px; 
+
 }
-
-
-
-
-
 
 .credits-text {
   font-size: 30px;

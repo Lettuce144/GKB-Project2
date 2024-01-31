@@ -61,7 +61,7 @@
     "4": {
       "people": [
         {
-          "character": "bankfunctionaris",
+          "character": "moneymaster",
           "lines": [
             "Hoe kunnen we u helpen vandaag, meneer?"
           ]
@@ -77,7 +77,7 @@
     "5": {
       "people": [
         {
-          "character": "bankfunctionaris",
+          "character": "moneymaster",
           "lines": [
             "Uw lening is goedgekeurd, meneer. Het geld zal binnenkort op uw rekening staan."
           ]

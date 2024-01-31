@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <audio id="talk" src="talk.mp3"></audio>
     <main id="main-menu">
         <div class="title">
             <h1>De laatste transactie</h1>
@@ -17,16 +18,29 @@
 
         <div class="buttons">
             <button onclick="StartGame()">Start</button>
-            <button>Instellingen</button>
+            <button id="instellingen">Instellingen</button>
         </div>
 
+        <div class="settings-menu" id="settings" style="display: none;">
+            <div class="checkmark-slider-container">
+                <div class="checkmark-container">
+                    <button>Test</button>
+                    <button>Test</button>
+                    <button>Test</button>
+                </div>
 
+                <div class="slider-container">
+                    <label for="myRange">Volume</label>
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
 
         <button class="credit-button" onclick="Credits()">Credits</button>
     </main>
 
     <main class="scene-class" id="scene-container">
-        <button style="position: absolute; top: 0; right: 0; margin: 2em;" id="mute">M</button>
+        <button style="position: absolute; top: 0; right: 0; margin: 2em;" id="mute" onclick="Mute()">M</button>
         <div id="dialouge-container">
 
             <img class="character" id="character" src="scenes/Lucas.png" alt="Lucas" srcset="">
