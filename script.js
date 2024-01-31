@@ -6,6 +6,8 @@ const type_speed = 25;
 const dialogue_element = document.getElementById("dialouge");
 const dialogue_container = document.getElementById("dialouge-container");
 const settings_menu = document.getElementById("settings");
+const talk = document.getElementById('talk');
+const volumeSlider = document.getElementById('myRange');
 
 let character = document.getElementById("character");
 let isMoving = false;
@@ -28,9 +30,11 @@ fetch("./dialogue.json")
 //So that we can get the options of the user
 if (localStorage.getItem("muteTalkingSound") != null) {
   muteTalkingSound = localStorage.getItem("muteTalkingSound");
+  document.getElementById("mute").innerHTML = muteTalkingSound ? 'Unmute' : 'Mute';
 }
 else{
   muteTalkingSound = false;
+  document.getElementById("mute").innerHTML = muteTalkingSound ? 'Unmute' : 'Mute';
   localStorage.setItem("muteTalkingSound", muteTalkingSound);
 }
 
@@ -58,11 +62,17 @@ function ToggleSettings() {
   }
 }
 
-document.getElementById("instellingen").addEventListener('click', ToggleSettings);
+// Add an event listener to the range input
+volumeSlider.addEventListener('input', function() {
+  // Update the volume of the audio element
+  const volume = volumeSlider.value / 100; // Normalize the value to be between 0 and 1
+  talk.volume = volume;
+});
 
 //Toggle for the mute button
 function Mute() {
   muteTalkingSound = !muteTalkingSound; 
+  document.getElementById("mute").innerHTML = muteTalkingSound ? 'Unmute' : 'Mute';
   localStorage.setItem("muteTalkingSound", muteTalkingSound);
 }
 
@@ -169,7 +179,7 @@ function typeDialogue(dialogueText, shouldMove) {
         dialogue_element.innerHTML += dialogueText.charAt(index);
         if (muteTalkingSound == false) {
           console.log("talking")
-          document.getElementById('talk').play();
+          talk.play();
         }
         index++;
         setTimeout(typeNextCharacter, type_speed);

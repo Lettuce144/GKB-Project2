@@ -18,16 +18,16 @@
 
         <div class="buttons">
             <button onclick="StartGame()">Start</button>
-            <button id="instellingen">Instellingen</button>
+            <button onclick="ToggleSettings()">Instellingen</button>
         </div>
 
         <div class="settings-menu" id="settings" style="display: none;">
             <div class="checkmark-slider-container">
-                <div class="checkmark-container">
+                <!-- <div class="checkmark-container">
                     <button>Test</button>
                     <button>Test</button>
                     <button>Test</button>
-                </div>
+                </div> -->
 
                 <div class="slider-container">
                     <label for="myRange">Volume</label>
@@ -40,7 +40,7 @@
     </main>
 
     <main class="scene-class" id="scene-container">
-        <button style="position: absolute; top: 0; right: 0; margin: 2em;" id="mute" onclick="Mute()">M</button>
+        <button style="position: absolute; top: 0; right: 0; margin: 2em;" id="mute" onclick="Mute()"></button>
         <div id="dialouge-container">
 
             <img class="character" id="character" src="scenes/Lucas.png" alt="Lucas" srcset="">
