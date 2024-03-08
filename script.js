@@ -84,9 +84,7 @@ function DoSceneEvent(sceneID) {
       break;
     case 7:
     case 8:
-      //Horrible way of removing all of the event listeners
-      //Nuke all of the event listeners
-      //dialogue_container.replaceWith(dialogue_container.cloneNode(true));
+      document.getElementById("choice-container").style = "display: none";
       console.log("removed event");
       break;
 
